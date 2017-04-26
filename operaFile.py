@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 """
 读写文件
 使用python内置函数open()来进行文件的读写操作
@@ -25,7 +24,8 @@ b   |   以二进制模式打开文件，而不是以文本模式
 
 import os
 
-def operaFile():    #创建文件
+
+def operaFile():  # 创建文件
     print(u'创建一个名为test.txt的文件，并在其中写入hello,adam')
     print(u'先确保test.txt不存在')
     os.system('rm test.txt')
@@ -40,6 +40,7 @@ def operaFile():    #创建文件
     os.system('cat test.txt')
     print('\n')
 
+
 """
     print(u'如何避免open文件失败的问题呢？')
     print(u'使用with as 就可以了')
@@ -47,7 +48,6 @@ def operaFile():    #创建文件
         st = fp.read()
     print('test.txt的内容为：%s' %st)
 """
-
 
 if __name__ == '__main__':
     operaFile()
